@@ -269,7 +269,7 @@ function getReasoningPayload(model, enableThinking, clientReasoningEffort, hasTo
       return { reasoning_effort: enableThinking ? 'high' : 'low' };
     }
 
-      case 'z-ai/glm-5.3': {
+      case 'glm-5.3': {
   const glmEffort = ['low', 'high', 'max'].includes(
     process.env.GLM_REASONING_EFFORT
   )
